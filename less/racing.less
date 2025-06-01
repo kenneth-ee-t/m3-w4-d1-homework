@@ -1,0 +1,120 @@
+// Imports
+@import "colors.less";
+@import "fonts.less";
+
+// Mixins
+.text-style(@color, @size: 1em, @weight: normal) {
+  color: @color;
+  font-size: @size;
+  font-weight: @weight;
+}
+
+* {
+  box-sizing: border-box !important;
+  transition: ease all 0.5s;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: @color-primary;
+  font-size: 18px;
+  font-family: @font-poppins;
+  line-height: 1.80857;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+
+.about_main {
+  .collection_section {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+
+    .container {
+      .new_text {
+        width: 100%;
+        float: left;
+        .text-style(@color-heading, 2em);
+      }
+
+      .consectetuer_text {
+        float: left;
+        .text-style(@color-heading, 1.2em, 400);
+        margin-left: 60px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .collection_section_3 {
+    width: 100%;
+    float: left;
+    padding-top: 0px;
+
+    .container {
+      .racing_shoes {
+        width: 100%;
+        float: left;
+        background-color: @bg-light;
+        height: auto;
+        padding: 100px 0;
+        background-size: 100%;
+        margin-bottom: 100px;
+
+        .shoes-img3 {
+          width: 100%;
+          float: left;
+          text-align: center;
+
+          img {
+            margin-top: 4em;
+            width: 70%;
+          }
+        }
+
+        .sale_text {
+          width: 100%;
+          float: left;
+          .text-style(@color-accent, 2em);
+          line-height: 1.75em;
+        }
+
+        .number_text {
+          float: left;
+          .text-style(@color-accent, 3em);
+          line-height: 1.75em;
+        }
+
+        .seemore {
+          width: 80%;
+          height: 50px;
+          .text-style(@color-white, 1.7em);
+          background-color: @bg-accent;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+.collection_text {
+  width: 100%;
+  float: left;
+  color: @color-white;
+  text-align: center;
+  font-family: @font-syncopate;
+  font-weight: bold;
+  font-size: 3em;
+  background-color: @bg-accent;
+  padding: 30px 0;
+}
+
+.copyright {
+  width: 100%;
+  float: left;
+  color: @color-white;
+  text-align: center;
+  background-color: @bg-accent;
+  font-family: @font-poppins;
+}
